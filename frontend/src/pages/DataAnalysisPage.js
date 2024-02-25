@@ -1,12 +1,21 @@
 import React, { useEffect } from 'react';
 import Chart from 'chart.js/auto'; // Import Chart.js
 import Navbar from '../components/Navbar';
+import { Link, useNavigate } from 'react-router-dom'; // Import Link component and useNavigate hook
 import './DataAnalysisPage.css'; // Import CSS for styling
 
 const DataAnalysisPage = () => {
+  const navigate = useNavigate(); // Use the useNavigate hook to navigate programmatically
+
+  // Function to handle PDF download
+  const handleDownloadPDF = () => {
+    // Implement PDF download logic here
+    alert('PDF Downloaded Successfully');
+  };
+
   useEffect(() => {
     // Generate random data for demonstration
-    const labels = ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'];
+    const labels = ['Product 1', 'Product 2', 'Product 3', 'Product 4', 'Product 5'];
     const data = [Math.random() * 100, Math.random() * 100, Math.random() * 100, Math.random() * 100, Math.random() * 100];
 
     // Draw bar chart for each analysis block with animation
@@ -64,6 +73,15 @@ const DataAnalysisPage = () => {
     <div className="data-analysis-page">
       <Navbar />
       <div className="container">
+        {/* New navbar for overall analysis and skewed page */}
+        <nav className="second-navbar">
+          <ul>
+            <li><Link to="/overall-analysis">Overall Analysis</Link></li>
+            <li><Link to="/skewed-page">Search by ID</Link></li>
+            {/* Add new link for View by category */}
+            <li><Link to="/VBC">View by category</Link></li>
+          </ul>
+        </nav>
         <h2>Data Analysis</h2>
         <div className="analysis-block">
           <h3>Descriptive Analysis</h3>
