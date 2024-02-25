@@ -1,44 +1,76 @@
 /* DataAnalysisPage.css */
 
 .data-analysis-page {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .analysis-block {
-    margin-bottom: 40px; /* Increased spacing between chart blocks */
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  h3 {
-    color: #007bff;
-  }
-  
-  .download-pdf-button {
-    display: block;
-    width: 200px;
-    margin: 40px auto 20px; /* Added more spacing */
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #ff4500; /* Orangish-red color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .download-pdf-button:hover {
-    background-color: #ff5722; /* Darker shade on hover */
-  }
-  
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1px auto 0; /* Adjust top margin to shift container to the top */
+}
+
+.analysis-block {
+  margin-bottom: 40px; /* Increased spacing between chart blocks */
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: #007bff;
+}
+
+.download-pdf-button {
+  display: block;
+  width: 200px;
+  margin: 40px auto 20px; /* Added more spacing */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff4500; /* Orangish-red color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-pdf-button:hover {
+  background-color: #ff5722; /* Darker shade on hover */
+}
+
+/* New styles for the second navbar */
+.second-navbar {
+  background-color: #434343; /* Blue background color */
+  padding: 10px 0; /* Adjust padding */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.second-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center the list items */
+}
+
+.second-navbar ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.second-navbar ul li a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-weight: bold;
+  padding: 8px 16px; /* Add padding to the links */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.second-navbar ul li a:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+  color: #fff; /* White text color on hover */
+}

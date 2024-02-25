@@ -34,7 +34,7 @@ const LandingPage = () => {
     <div>
       <Navbar />
       <div className="container">
-        <h2>Welcome to Text Analytics</h2>
+        <h2>InsightPlus: Customer Feedback Analytics Suite</h2>
         <ImageGallery />
         <p className="text-analysis">
           Text analysis is a crucial aspect of understanding large volumes of textual data. It involves various techniques such as sentiment analysis, key phrase extraction, topic modeling, and more, to derive meaningful insights from text. At our Text Analytics platform, we utilize advanced algorithms and visualizations to make text analysis both efficient and insightful.
