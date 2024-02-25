@@ -1,0 +1,16 @@
+/* ImageGallery.css */
+
+.image-gallery {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer; /* Add cursor pointer for click effect */
+  }
+  
+  
+  
